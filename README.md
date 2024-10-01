@@ -1,5 +1,5 @@
 # HUDson
-[es](https://github.com/joelemiliano/HUDson/edit/main/README-es.md)
+[es](https://github.com/joelemiliano/HUDson/blob/main/README-es.md)
 
 Tool that allows your JS scripts available in HUDson's JS file to be run. For MediaWiki
 
