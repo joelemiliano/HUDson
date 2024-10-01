@@ -41,21 +41,21 @@ mw.loader.using('mediawiki.util').then(function() {
                 data: {
                     action: 'edit',
                     title: scriptPage,
-                    text: "// === Alert ===\nalert('Hello World!');",
+                    text: "// === Alerta ===\nalert('¡Hola Mundo!');",
                     token: mw.user.tokens.get('csrfToken'),  // Necesitamos el token CSRF para realizar la edición
                     format: 'json'
                 },
                 success: function(response) {
                     if (response && response.edit && response.edit.result === 'Success') {
-                        mw.notify('hudson.js was created succesfully in your userpage');
+                        mw.notify('hudson.js fue creado exitosamente en su pagina de usuario');
                         resolve(true);
                     } else {
-                        mw.notify('Error creating hudson.js', { type: 'error' });
+                        mw.notify('Error al crear hudson.js', { type: 'error' });
                         reject();
                     }
                 },
                 error: function() {
-                    mw.notify('Error creating hudson.js', { type: 'error' });
+                    mw.notify('Error al crear hudson.js', { type: 'error' });
                     reject();
                 }
             });
@@ -80,11 +80,11 @@ mw.loader.using('mediawiki.util').then(function() {
                 if (scripts.length > 1) {
                     showScriptListAnim(scripts);
                 } else {
-                    mw.notify('No scripts were found in hudson.js. Add some scripts!');
+                    mw.notify('No se han encontrado scripts en hudson.js. ¡Añade algunos!');
                 }
             })
             .catch(error => {
-                console.error('Error loading JS file:', error);
+                console.error('Error al cargar el archivo JS', error);
             });
     }
 
@@ -105,7 +105,7 @@ mw.loader.using('mediawiki.util').then(function() {
 
         // Crear un título para la list
         var title = document.createElement('h3');
-        title.textContent = 'Scripts de' + userName;
+        title.textContent = 'Tus scripts';
         title.style = 'color:#54595d; font-size:16px;';
         listDiv.appendChild(title);
 
@@ -179,7 +179,7 @@ mw.loader.using('mediawiki.util').then(function() {
     var link = document.createElement('a');
     link.href = '#';
     link.textContent = 'HUDson';
-    link.title = 'Show script list';
+    link.title = 'Mostrar lista de scripts';
     link.style = 'font-weight:bold';
     link.onclick = function(event) {
         event.preventDefault();
@@ -195,12 +195,12 @@ mw.loader.using('mediawiki.util').then(function() {
     if (personalTools) {
         personalTools.appendChild(listItem);
     } else {
-        console.error('HUDson menu doesn\'t exist');
+        console.error('El menu HUDson no existe');
     }
 
     // Verificar si el archivo jsload.js existe o crearlo si no
     verifyAndCreateHudsonFile().then(function() {
-        mw.notify('hudson.js exists and is ready');
+        mw.notify('hudson.js existe y esta listo');
     }).catch(function() {
         mw.notify('Unable to verify existence of hudson.js and create it', { type: 'error' });
     });
