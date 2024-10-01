@@ -9,7 +9,7 @@ Herramienta para MediaWiki para cargar scripts disponibles en tu archivo JS
 
 ## Como usar HUDson
 Necesitas usar la versión indicada de HUDson dependiendo de la skin que usas, seleccionala aqui:
-* [Vector 2010](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector-es.js) ([en](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector.js))
+* [Vector 2010](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector-es.js) ([en](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector.js), [pt](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector-pt.js))
 
 Si por ejemplo usted usa Vector 2010, copia el codigo para esa skin y pegalo en ``Especial:MiPágina/vector.js``.
 
