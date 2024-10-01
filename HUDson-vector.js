@@ -200,7 +200,7 @@ mw.loader.using('mediawiki.util').then(function() {
 
     // Verificar si el archivo jsload.js existe o crearlo si no
     verifyAndCreateHudsonFile().then(function() {
-        mw.notify('hudson.js exists and is ready');
+        console.log('hudson.js exists and is ready');
     }).catch(function() {
         mw.notify('Unable to verify existence of hudson.js and create it', { type: 'error' });
     });
