@@ -10,6 +10,7 @@ Tool that allows your JS scripts available in HUDson's JS file to be run. For Me
 ## How to use HUDson
 You need to use the right version of HUDson depending the skin you are using, select it here:
 * [Vector 2010](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector.js) ([es](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector-es.js), [pt](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector-pt.js))
+* [Vector 2022](https://github.com/joelemiliano/HUDson/blob/main/HUDson-vector2022.js)
 * [Monobook](https://github.com/joelemiliano/HUDson/blob/main/HUDson-monobook.js)
 * [Timeless](https://github.com/joelemiliano/HUDson/blob/main/HUDson-timeless.js)
 
