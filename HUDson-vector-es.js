@@ -206,3 +206,6 @@ mw.loader.using('mediawiki.util').then(function() {
     });
 });
 
+// Contributors to Translation:
+// * EmicraftNoob
+
